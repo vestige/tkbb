@@ -1,3 +1,6 @@
+#
+# 1syo added comments.
+#
 require "csv"
 
 mail_txt = ""
