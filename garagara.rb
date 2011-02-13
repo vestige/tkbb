@@ -12,4 +12,6 @@ end
 
 
 p mail_txt
-
+#
+# 1syo added comments.
+#
