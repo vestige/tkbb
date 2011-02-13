@@ -1,5 +1,6 @@
 #
 # 1syo added comments.
+# tatsuo added comments.
 #
 require "csv"
 
