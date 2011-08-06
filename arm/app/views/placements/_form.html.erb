@@ -1,0 +1,29 @@
+<%= form_for(@placement) do |f| %>
+  <% if @placement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@placement.errors.count, "error") %> prohibited this placement from being saved:</h2>
+
+      <ul>
+      <% @placement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

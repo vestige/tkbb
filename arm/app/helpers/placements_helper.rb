@@ -1,0 +1,2 @@
+module PlacementsHelper
+end

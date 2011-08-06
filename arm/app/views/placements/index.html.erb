@@ -1,0 +1,27 @@
+<h1>Listing placements</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @placements.each do |placement| %>
+  <tr>
+    <td><%= placement.name %></td>
+    <td><%= placement.latitude %></td>
+    <td><%= placement.longitude %></td>
+    <td><%= link_to 'Show', placement %></td>
+    <td><%= link_to 'Edit', edit_placement_path(placement) %></td>
+    <td><%= link_to 'Destroy', placement, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Placement', new_placement_path %>
