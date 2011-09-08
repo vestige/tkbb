@@ -1,2 +1,4 @@
-http://ref.xaio.jp/ruby/classes/array/choice
+-- tkbb project
+
+Bouldering Social App
 
