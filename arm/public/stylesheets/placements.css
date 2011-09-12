@@ -1,0 +1,27 @@
+table.placements {
+  width: 750px;
+  margin: 5px auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.placements tr {
+  border: solid 2px #ccc;
+}
+table.placements td {
+  padding: 5px;
+}
+
+table.placements col.name {
+  width: 350px;
+}
+
+table.placements col.pos {
+  background-color: #ddd;
+}
+
+table.placements col.action {
+  background-color: #fff;
+  border: solid 2px #bbb;
+}

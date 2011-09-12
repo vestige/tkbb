@@ -1,0 +1,137 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D92211D213ED7D89004B12BD /* server */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D92211D513ED7D89004B12BD /* Build configuration list for PBXAggregateTarget "server" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = server;
+			productName = server;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		D90C352C13ED7CE900B764F5 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		D90C352D13ED7D0400B764F5 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		D90C352E13ED7D0400B764F5 /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.ru; sourceTree = "<group>"; };
+		D90C352F13ED7D0400B764F5 /* db */ = {isa = PBXFileReference; lastKnownFileType = folder; path = db; sourceTree = "<group>"; };
+		D90C353013ED7D0400B764F5 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		D90C353113ED7D0400B764F5 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		D90C353213ED7D0400B764F5 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		D90C353313ED7D0400B764F5 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		D90C353413ED7D0400B764F5 /* log */ = {isa = PBXFileReference; lastKnownFileType = folder; path = log; sourceTree = "<group>"; };
+		D90C353513ED7D0400B764F5 /* nbproject */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nbproject; sourceTree = "<group>"; };
+		D90C353613ED7D0400B764F5 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		D90C353713ED7D0400B764F5 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		D90C353813ED7D0400B764F5 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D90C353913ED7D0400B764F5 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = script; sourceTree = "<group>"; };
+		D90C353A13ED7D0400B764F5 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
+		D90C353B13ED7D0400B764F5 /* tmp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tmp; sourceTree = "<group>"; };
+		D90C353C13ED7D0400B764F5 /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vendor; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D98CBB5213ED7C6F0038421C = {
+			isa = PBXGroup;
+			children = (
+				D90C352D13ED7D0400B764F5 /* config */,
+				D90C352E13ED7D0400B764F5 /* config.ru */,
+				D90C352F13ED7D0400B764F5 /* db */,
+				D90C353013ED7D0400B764F5 /* doc */,
+				D90C353113ED7D0400B764F5 /* Gemfile */,
+				D90C353213ED7D0400B764F5 /* Gemfile.lock */,
+				D90C353313ED7D0400B764F5 /* lib */,
+				D90C353413ED7D0400B764F5 /* log */,
+				D90C353513ED7D0400B764F5 /* nbproject */,
+				D90C353613ED7D0400B764F5 /* public */,
+				D90C353713ED7D0400B764F5 /* Rakefile */,
+				D90C353813ED7D0400B764F5 /* README */,
+				D90C353913ED7D0400B764F5 /* script */,
+				D90C353A13ED7D0400B764F5 /* test */,
+				D90C353B13ED7D0400B764F5 /* tmp */,
+				D90C353C13ED7D0400B764F5 /* vendor */,
+				D90C352C13ED7CE900B764F5 /* app */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D98CBB5413ED7C6F0038421C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D98CBB5713ED7C6F0038421C /* Build configuration list for PBXProject "arm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D98CBB5213ED7C6F0038421C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D92211D213ED7D89004B12BD /* server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D92211D313ED7D89004B12BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D92211D413ED7D89004B12BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D98CBB5913ED7C6F0038421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D98CBB5A13ED7C6F0038421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D92211D513ED7D89004B12BD /* Build configuration list for PBXAggregateTarget "server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92211D313ED7D89004B12BD /* Debug */,
+				D92211D413ED7D89004B12BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D98CBB5713ED7C6F0038421C /* Build configuration list for PBXProject "arm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98CBB5913ED7C6F0038421C /* Debug */,
+				D98CBB5A13ED7C6F0038421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98CBB5413ED7C6F0038421C /* Project object */;
+}

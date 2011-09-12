@@ -1,0 +1,27 @@
+div#wrapper {
+  width: 800px;
+  margin: 20px auto;
+  background-color: #0ca;
+}
+
+div#header, div#footer {
+  color: #666;
+  margin: 5px;
+  padding: 5px;
+}
+
+div#footer {
+  text-align: center;
+}
+
+div#contents {
+  background-color: #eee;
+  color: #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+div#contents h1 {
+  margin: 10px;
+  padding: 5px;
+}
