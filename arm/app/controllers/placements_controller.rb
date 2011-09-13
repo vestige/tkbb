@@ -1,6 +1,6 @@
 class PlacementsController < ApplicationController
   def search
-    @placements = Placement
+    @placements = Placement.all
     @placements = @placements.search(params[:query]) if params[:query].present?
     
     render :index
