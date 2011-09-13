@@ -4,10 +4,16 @@ div#wrapper {
   background-color: #0ca;
 }
 
-div#header, div#footer {
+div#header {
   color: #666;
-  margin: 5px;
-  padding: 5px;
+  margin: 1px;
+  padding: 1px;
+}
+
+div#footer {
+  color: #666;
+  margin: 3px;
+  padding: 3px;
 }
 
 div#footer {
