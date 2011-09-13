@@ -1,5 +1,7 @@
 AppTkbb::Application.routes.draw do
-  resources :placements
+  resources :placements do
+    get :search, :on => :collection
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
