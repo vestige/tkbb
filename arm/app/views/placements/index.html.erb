@@ -1,5 +1,9 @@
 <h1>Listing placements</h1>
 
+<%= form_tag [:search, :placements], :method => :get, :style => "text-align: right" do %>
+  <%= text_field_tag "query", params[:query] %> <%= submit_tag "search" %>
+<% end %>
+
 <table class="placements">
 
   <col class="name" />
