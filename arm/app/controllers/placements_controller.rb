@@ -1,4 +1,11 @@
 class PlacementsController < ApplicationController
+  def search
+    @placements = Placement
+    @placements = @placements.search(params[:query]) if params[:query].present?
+    
+    render :index
+  end
+  
   # GET /placements
   # GET /placements.xml
   def index
