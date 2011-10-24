@@ -15,6 +15,13 @@
   <%= @placement.longitude %>
 </p>
 
+<ul>
+  <% for location in @placement.nearbys(10) %>  
+    <li><%= link_to location.name, location %> ↵  
+        (<%= location.distance.round(2) %> miles)</li>  
+  <% end %>  
+</ul>
+  
 <p>
 <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@placement.latitude}%2C#{@placement.longitude}" %>  
 </p>
