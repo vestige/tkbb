@@ -8,6 +8,8 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 gem 'geocoder'
 gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'multi_json'
 
 # Use unicorn as the web server
 # gem 'unicorn'
