@@ -4,4 +4,6 @@ log/*.log
 tmp/
 nbproject/private/
 *.DS_Store
+*.swp
 .rvmrc
+.powenv
