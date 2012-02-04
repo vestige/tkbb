@@ -18,7 +18,7 @@
 <ul>
   <% for location in @placement.nearbys(10) %>  
     <li><%= link_to location.name, location %> ↵  
-        (<%= location.distance.round(2) %> miles)</li>  
+        (<%= location.distance.to_i.round(2) %> miles)</li>  
   <% end %>  
 </ul>
   
