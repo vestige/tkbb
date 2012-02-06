@@ -11,3 +11,9 @@ Placement.create(:name => 'tsurukawa',
 Placement.create(:name => 'kawasaki',
                  :latitude => 13.0,
                  :longitude => 1982.6)
+
+User.create(
+  :provider => 'manual',
+  :uid      => 'arm',
+  :name     => 'arm'
+)

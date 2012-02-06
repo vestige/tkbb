@@ -8,4 +8,9 @@ AppTkbb::Application.routes.draw do
   
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
+
+  #TODO Delete!!
+  namespace :backdoor do |backdoor|
+    match :login
+  end
 end
