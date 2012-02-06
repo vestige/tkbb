@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>AppTkbb</title>
-
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -11,19 +10,17 @@
         padding-top: 50px;
       }
     </style>
-
 </head>
+
 <body>
-<div class="container">
-   <div class="page-header">
-      <h1><%= render "shared/header" %></h1>
+   <%= render "shared/header" %>
+   <div class="container">
+      <div class="content">
+         <%= yield %>
+      </div>
+      <footer>
+         <%= render "shared/footer" %>
+      </footer>
    </div>
-   <div class="content">
-      <%= yield %>
-   </div>
-   <footer>
-      <%= render "shared/footer" %>
-   </footer>
-</div>
 </body>
 </html>
