@@ -2,13 +2,12 @@
    <div class="fill">
       <div class="container">
          <div class="brand">tkbb</div>
-         <div class="pull-right">
-            <% if current_user %>
-               Welcome <%= current_user.name %>!
-               <%= link_to "Sign Out", signout_path %>
-            <% else %>
-               <%= link_to "Sign in with Twitter", "/auth/twitter" %>
-            <% end %>
+         <div class="navbar-text pull-right" style="margin-top: 10px; color:white">
+                  <% if current_user %>
+                     Welcome! <span class="label success"><%= current_user.name %></span> <%= link_to "Sign Out", signout_path %>
+                  <% else %>
+                     <%= link_to image_tag('/images/sign-in-with-twitter.png'), "/auth/twitter" %>
+                  <% end %>
          </div>
       </div>
    </div>
