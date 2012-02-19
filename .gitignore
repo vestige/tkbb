@@ -8,3 +8,5 @@ nbproject/private/
 *.swp
 .rvmrc
 .powenv
+.project
+
