@@ -1,6 +1,6 @@
-class CreatePlacements < ActiveRecord::Migration
+class CreateGyms < ActiveRecord::Migration
   def self.up
-    create_table :placements do |t|
+    create_table :gyms do |t|
       t.string :name
       t.float :latitude
       t.float :longitude
@@ -10,6 +10,6 @@ class CreatePlacements < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :placements
+    drop_table :gyms
   end
 end

@@ -1,4 +1,4 @@
-table.placements {
+table.gyms {
   width: 750px;
   margin: 5px auto;
   background-color: #fff;
@@ -6,22 +6,22 @@ table.placements {
   border-spacing: 0;
 }
 
-table.placements tr {
+table.gyms tr {
   border: solid 2px #ccc;
 }
-table.placements td {
+table.gyms td {
   padding: 5px;
 }
 
-table.placements col.name {
+table.gyms col.name {
   width: 350px;
 }
 
-table.placements col.pos {
+table.gyms col.pos {
   background-color: #ddd;
 }
 
-table.placements col.action {
+table.gyms col.action {
   background-color: #fff;
   border: solid 2px #bbb;
 }

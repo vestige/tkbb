@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20111017223903) do
 
-  create_table "placements", :force => true do |t|
+  create_table "gyms", :force => true do |t|
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"

@@ -1,5 +1,5 @@
 AppTkbb::Application.routes.draw do
-  resources :placements do
+  resources :gyms do
     get :search, :on => :collection
   end
 
