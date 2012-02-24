@@ -1,3 +1,7 @@
+body {
+  padding-top: 50px;
+}
+
 div#wrapper {
   width: 800px;
   margin: 20px auto;
