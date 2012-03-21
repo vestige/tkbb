@@ -3,6 +3,8 @@ AppTkbb::Application.routes.draw do
     get :search, :on => :collection
   end
 
+  resources :climbing
+
   root :to => "welcome#index"
   post "comment" => "welcome#comment"
   
