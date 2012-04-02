@@ -1,0 +1,18 @@
+<h1>Listing Post</h1>
+
+<table class="table-bordered table-striped">
+  <tr>
+    <td>user</td>
+    <td>gym</td>
+    <td>action</td>
+    <td>comment</td>
+  </tr>
+  <% @climbings.each do |climbing| %>
+  <tr>
+    <td><%= climbing.user.name %></td>
+    <td><%= climbing.gym.name %></td>
+    <td><%= climbing.action %></td>
+    <td><%= climbing.comment %></td>
+  </tr>
+  <% end %>
+</table>
