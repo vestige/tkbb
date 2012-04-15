@@ -2,36 +2,6 @@ body {
   padding-top: 50px;
 }
 
-div#wrapper {
-  width: 800px;
-  margin: 20px auto;
-  background-color: #0ca;
-}
-
-div#header {
-  color: #666;
-  margin: 1px;
-  padding: 1px;
-}
-
-div#footer {
-  color: #666;
-  margin: 3px;
-  padding: 3px;
-}
-
-div#footer {
+footer {
   text-align: center;
-}
-
-div#contents {
-  background-color: #eee;
-  color: #000;
-  margin: 5px;
-  padding: 5px;
-}
-
-div#contents h1 {
-  margin: 10px;
-  padding: 5px;
 }
