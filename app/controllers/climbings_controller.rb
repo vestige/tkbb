@@ -21,8 +21,11 @@ class ClimbingsController < ApplicationController
     end
 
     message = "#tkbb #" + @climbing.action + " #" + @climbing.gym.name + " " + @climbing.comment
-    p message
-#    Twitter.update(message)
+    if Rails.env.production?
+      Twitter.update(message)
+    else
+      p message
+    end
   end
   
   def create
