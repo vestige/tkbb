@@ -3,9 +3,6 @@
 <%= form_for(@climbing) do |f| %>
 <table>
   <tr>
-    <td><%= User.all %></td>
-  </tr>
-  <tr>
     <td>
       <%= f.select "action", [["部活", "circle"], ["闇練", "training"], ["予定", "plan"]] %>
       <%= f.collection_select(:gym_id, Gym.all, :id, :name) %>
@@ -14,7 +11,7 @@
   </tr>
   <tr>
     <td>
-      <%= f .text_area (:comment) %>
+      <%= f.text_area(:comment, :size => "10x10") %>
     </td>
   </tr>
 </table>
