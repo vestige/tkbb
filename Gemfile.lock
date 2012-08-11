@@ -44,6 +44,11 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (3.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (3.5.0)
+      factory_girl (~> 3.5.0)
+      railties (>= 3.0.0)
     geocoder (1.1.2)
     haml (3.1.6)
     haml-rails (0.3.4)
@@ -60,7 +65,6 @@ GEM
       thor (~> 0.14)
     json (1.7.4)
     libv8 (3.3.10.4)
-    machinist (2.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -160,10 +164,10 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails
+  factory_girl_rails
   geocoder
   haml-rails
   jquery-rails
-  machinist
   omniauth
   omniauth-twitter
   pg
@@ -171,6 +175,7 @@ DEPENDENCIES
   pry-rails
   rails (= 3.2.8)
   rspec-rails
+  sass
   sass-rails
   simplecov
   sqlite3

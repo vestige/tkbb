@@ -9,6 +9,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 
 group :assets do
+  gem 'sass'
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
@@ -17,7 +18,7 @@ end
 
 group :test, :development do
   gem 'sqlite3'
-  gem 'machinist'
+  gem 'factory_girl_rails'
   gem 'pry'
   gem 'pry-rails'
   gem 'rspec-rails'
