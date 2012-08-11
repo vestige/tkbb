@@ -23,6 +23,7 @@ group :test, :development do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'simplecov', :require => false
+  gem 'quiet_assets'
 end
 
 group :production do
