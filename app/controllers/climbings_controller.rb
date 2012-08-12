@@ -20,6 +20,7 @@ class ClimbingsController < ApplicationController
     Twitter.update(message) if Rails.env.production?
     Rails.logger.info("Post to Twitter: " + message)
   end
+  private :tweet
   
   def create
     @climbing = Climbing.new(params[:climbing])
