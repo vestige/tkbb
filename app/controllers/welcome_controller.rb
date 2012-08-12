@@ -1,7 +1,5 @@
 class WelcomeController < ApplicationController  
   def index
-    p "tkbb"
-    p params[:comment_val]
   end
 
   def comment
