@@ -10,3 +10,4 @@ nbproject
 .powenv
 .project
 arm.xcodeproj
+coverage
