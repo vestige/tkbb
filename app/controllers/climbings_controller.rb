@@ -15,7 +15,7 @@ class ClimbingsController < ApplicationController
       config.oauth_token_secret = current_user.secret
     end
 
-    message = "#tkbb #" + @climbing.action + " #" + @climbing.gym.name + " " + @climbing.comment
+    message = "#tkbb ##{@climbing.action} ##{@climbing.gym.name} #{@climbing.comment}"
 
     Twitter.update(message) if Rails.env.production?
     Rails.logger.info("Post to Twitter: " + message)
