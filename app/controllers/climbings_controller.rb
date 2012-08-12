@@ -1,6 +1,6 @@
 class ClimbingsController < ApplicationController
   def index
-    @climbings = Climbing.with_user
+    @climbings = Climbing.includes(:user).all
   end
   
   def new
