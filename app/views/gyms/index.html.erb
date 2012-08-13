@@ -1,6 +1,6 @@
 <h1>Listing gyms</h1>
 
-<%= form_tag [:search, :gyms], :method => :get, :style => "text-align: right" do %>
+<%= form_tag :gyms, :method => :get, :style => "text-align: right" do %>
   <%= text_field_tag "query", params[:query] %> <%= submit_tag "search" %>
 <% end %>
 

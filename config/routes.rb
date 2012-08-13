@@ -1,8 +1,5 @@
 AppTkbb::Application.routes.draw do
-  resources :gyms do
-    get :search, :on => :collection
-  end
-
+  resources :gyms
   resources :climbings
 
   root :to => "welcome#index"

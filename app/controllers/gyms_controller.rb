@@ -1,17 +1,12 @@
 class GymsController < ApplicationController
-  def search
-    # @gyms = Gym
+  def index
     if params[:query].present?
-      @gyms = Gym.search(params[:query]) 
+      @gyms = Gym.search(params[:query])
     else
       @gyms = Gym.all
     end
 
     render :index
-  end
-  
-  def index
-    @gyms = Gym.all
   end
 
   def show
