@@ -8,13 +8,15 @@ gem 'geocoder'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'twitter'
+gem 'haml'
 
 group :assets do
-  gem 'sass'
-  gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'therubyracer'
+  gem 'less-rails'
+  gem 'less-rails-bootstrap'
+  gem 'less-rails-bootswatch'
 end
 
 group :test, :development do
