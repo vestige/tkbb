@@ -1,0 +1,16 @@
+= form_for @gym, :html => { :class => 'form-horizontal' } do |f|
+  %fieldset
+    .control-group
+      = f.label :name, '名前', :class => 'control-label'
+      .controls
+        = f.text_field :name
+    .control-group
+      = f.label :latitude, '緯度', :class => 'control-label'
+      .controls
+        = f.text_field :latitude
+    .control-group
+      = f.label :longitude, '経度', :class => 'control-label'
+      .controls
+        = f.text_field :longitude
+    .form-actions
+      = f.submit nil, :class => 'btn btn-primary '

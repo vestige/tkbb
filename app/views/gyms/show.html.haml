@@ -1,0 +1,64 @@
+- @title = @gym.name
+
+- if notice
+  .alert.alert-info
+    = notice
+
+.page-header
+  %h1= @title
+
+.row
+  .pull-right
+    = link_to '編集する', edit_gym_path(@gym), :class => 'btn'
+    = link_to '一覧にもどる', gyms_path, :class => 'btn'
+
+.row
+  .span6
+    = image_tag map_url(@gym)
+  .span6
+    %h3 位置情報
+    %table.table
+      %tbody
+        %tr
+          %th 緯度
+          %td= @gym.latitude
+        %tr
+          %th 経度
+          %td= @gym.longitude
+    %h3 近くのジム
+    %ul
+      - for location in @gym.nearbys(10)
+        %li= link_to location.name, location
+
+
+-#
+-#<p id="notice"><%= notice %></p>
+-#
+-#<p>
+-#  <b>Name:</b>
+-#  <%= @gym.name %>
+-#</p>
+-#
+-#<p>
+-#  <b>Latitude:</b>
+-#  <%= @gym.latitude %>
+-#</p>
+-#
+-#<p>
+-#  <b>Longitude:</b>
+-#  <%= @gym.longitude %>
+-#</p>
+-#
+-#<ul>
+-#  <% for location in @gym.nearbys(10) %>
+-#    <li><%= link_to location.name, location %> ↵
+-#        (<%= location.distance.to_i.round(2) %> miles)</li>
+-#  <% end %>
+-#</ul>
+-#
+-#<p>
+-#<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@gym.latitude}%2C#{@gym.longitude}" %>
+-#</p>
+-#
+-#<%= link_to 'Edit', edit_gym_path(@gym) %> |
+-#<%= link_to 'Back', gyms_path %>
