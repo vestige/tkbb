@@ -1,0 +1,41 @@
+- @title = 'クライミングジム'
+
+- if notice
+  .alert.alert-info
+    = notice
+
+.page-header
+  %h1= @title
+
+.pull-right
+  = form_tag :gyms, :method => :get, :class => 'form-search' do
+    .input-prepend><
+      %span.add-on
+        %i.icon-search
+      = text_field_tag :query, params[:query], :class => 'input-medium search-query'
+
+- unless @gyms.empty?
+  %table.table.table-striped
+    %thead
+      %tr
+        %th No.
+        %th 名前
+        %th 緯度
+        %th 経度
+        %th &nbsp;
+    %tbody
+      - for gym in @gyms do
+        %tr
+          %td= gym.id
+          %td= gym.name
+          %td= gym.latitude
+          %td= gym.longitude
+          %td
+            = link_to '詳細をみる', gym, :class => 'btn btn-small'
+            = link_to '編集する', edit_gym_path(gym), :class => 'btn btn-small'
+            = link_to '削除する', gym, :method => :delete, :data => { :confirm => '本当に削除しますか？' }, :class => 'btn btn-small'
+
+- else
+  .well まだクライミングジムが登録されていません。
+
+= link_to 'クライミングジムを登録する', new_gym_path, :class => 'btn btn-small'

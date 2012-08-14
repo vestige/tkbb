@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  gyms_controller:
+    create:
+      success: "Gym was successfully created."
+    update:
+      success: "Gym was successfully updated."

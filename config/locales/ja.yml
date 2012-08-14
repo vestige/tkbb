@@ -1,0 +1,15 @@
+# Copy entries from https://raw.github.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml if you need
+
+ja:
+  helpers:
+    select:
+      prompt: 選択してください。
+    submit:
+      create: 登録する
+      submit: 保存する
+      update: 編集する
+  gyms_controller:
+    create:
+      success: "ジムを登録しました"
+    update:
+      success: "ジムを編集しました"

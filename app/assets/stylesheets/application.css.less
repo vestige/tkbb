@@ -1,0 +1,37 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+@import "twitter/bootstrap";
+@import "twitter/bootstrap/responsive";
+@import "bootswatch/spacelab/bootswatch";
+@import "bootswatch/spacelab/variables";
+
+body {
+    padding-top: 90px;
+}
+
+header {
+    h1 {
+        font-size: @baseFontSize * 3;
+        margin-bottom: @baseFontSize * 1.5;
+    }
+    p {
+        font-size: @baseFontSize * 1.5;
+        margin-bottom: 18px;
+        font-weight: 300;
+    }
+}
+.main-menu {
+    .start-here { text-align: center;}
+}
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid @tableBorder;
+}
+

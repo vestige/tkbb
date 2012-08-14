@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20120409135122) do
     t.integer  "gym_id"
     t.string   "comment"
     t.string   "action"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "climbings", ["gym_id"], :name => "index_climbings_on_gym_id"
@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(:version => 20120409135122) do
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(:version => 20120409135122) do
     t.string   "name"
     t.string   "token"
     t.string   "secret"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

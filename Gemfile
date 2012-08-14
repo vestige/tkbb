@@ -1,24 +1,35 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.3'
+gem 'rails', '3.2.8'
 
-gem 'sqlite3'
+gem 'haml-rails'
+gem 'jquery-rails'
 gem 'geocoder'
 gem 'omniauth'
 gem 'omniauth-twitter'
-
-group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
-  gem 'pg'
-end
+gem 'twitter'
+gem 'haml'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.1.5'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'less-rails-bootstrap'
+  gem 'less-rails-bootswatch'
 end
 
-gem 'jquery-rails'
+group :test, :development do
+  gem 'sqlite3'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'simplecov', :require => false
+  gem 'quiet_assets'
+end
 
-gem 'twitter'
-
+group :production do
+  gem 'thin'
+  gem 'pg'
+end
