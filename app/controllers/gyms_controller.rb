@@ -25,7 +25,7 @@ class GymsController < ApplicationController
     @gym = Gym.new(params[:gym])
 
     if @gym.save
-      redirect_to(@gym, :notice => 'Gym was successfully created.')
+      redirect_to(@gym, :notice => t('gyms_controller.create.success'))
     else
       render :action => "new"
     end
@@ -35,7 +35,7 @@ class GymsController < ApplicationController
     @gym = Gym.find(params[:id])
 
     if @gym.update_attributes(params[:gym])
-      redirect_to(@gym, :notice => 'Gym was successfully updated.')
+      redirect_to(@gym, :notice => t('gyms_controller.update.success'))
     else
       render :action => "edit"
     end
