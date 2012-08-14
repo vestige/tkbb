@@ -10,11 +10,11 @@
         - if current_user
           %li.dropdown
             %a.dropdown-toggle{:data => { :toggle => 'dropdown', :target => '#'}, :href => signout_path}
-              Welcome #{current_user.name.try(:html_safe)}
+              #{current_user.name.try(:html_safe)} さんようこそ
               %b{:class => 'caret'}
             %ul.dropdown-menu
-              %li= link_to 'Sign-out', signout_path
+              %li= link_to 'サインアウト', signout_path
         - else
-          %li= link_to 'Sign-in with Twitter', signin_path(:provider => 'twitter')
+          %li= link_to 'Twitterでサインイン', signin_path(:provider => 'twitter')
           - if Rails.env.development?
-            %li= link_to 'Sign-in as Developer', signin_path(:provider => 'developer')
+            %li= link_to '開発者としてサインイン', signin_path(:provider => 'developer')
