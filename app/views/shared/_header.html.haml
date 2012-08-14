@@ -2,6 +2,9 @@
   .navbar-inner
     .container
       = link_to '#tkbb', root_path, :class => 'brand'
+      %ul.nav
+        %li= link_to 'みんなの記録', climbings_path
+        %li= link_to '記録をつける', new_climbing_path
       %ul.nav.nav-pills.pull-right
         - if current_user
           %li.dropdown

@@ -1,0 +1,26 @@
+- @title = 'みんなのクライミング記録'
+
+.page-header
+  %h1= @title
+
+- unless @climbings.empty?
+  %table.table.table-striped
+    %thead
+      %tr
+        %th No.
+        %th 部員
+        %th ジム
+        %th 活動内容
+        %th コメント
+    %tbody
+      - for climbing in @climbings do
+        %tr
+          %td= climbing.id
+          %td= climbing.user.name
+          %td= climbing.gym.name
+          %td= climbing.action
+          %td= simple_format climbing.comment
+- else
+  .well
+    %p まだ、クライミングが記録されていません。クライミングの練習記録をつけて、部員同士で意識を高め合おう！
+    =link_to raw('<i class="icon-ok icon-white"></i> ') + 'クライミングの記録をつける', new_climbing_path, :class => 'btn btn-large btn-info'
