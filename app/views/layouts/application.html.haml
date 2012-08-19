@@ -1,0 +1,15 @@
+!!! 5
+%html
+  %head
+    %title #{@title} #tkbb
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tag
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+  %body
+    = render "shared/header"
+    .container
+      .row
+        .span12
+          = yield
+      = render "shared/footer"

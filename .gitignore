@@ -3,10 +3,11 @@ arm.xcodeproj/
 db/*.sqlite3
 log/*.log
 tmp/
-nbproject/private/
+nbproject
 *.DS_Store
 *.swp
 .rvmrc
 .powenv
 .project
-
+arm.xcodeproj
+coverage

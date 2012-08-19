@@ -1,15 +1,10 @@
 class ClimbingsController < ApplicationController
   def index
-    @climbings = Climbing.with_user
+    @climbings = Climbing.includes(:user).all
   end
   
   def new
     @climbing = Climbing.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @climbing }
-    end
   end
 
   def tweet
@@ -20,13 +15,12 @@ class ClimbingsController < ApplicationController
       config.oauth_token_secret = current_user.secret
     end
 
-    message = "#tkbb #" + @climbing.action + " #" + @climbing.gym.name + " " + @climbing.comment
-    if Rails.env.production?
-      Twitter.update(message)
-    else
-      p message
-    end
+    message = "#tkbb ##{@climbing.action} ##{@climbing.gym.name} #{@climbing.comment}"
+
+    Twitter.update(message) if Rails.env.production?
+    Rails.logger.info("Post to Twitter: " + message)
   end
+  private :tweet
   
   def create
     @climbing = Climbing.new(params[:climbing])

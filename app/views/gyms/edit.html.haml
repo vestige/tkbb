@@ -1,0 +1,12 @@
+- @title = '編集：' + @gym.name
+
+.page-header
+  %h1= @title
+
+.row
+  .pull-right
+    = link_to '詳細にもどる', gym_path(@gym), :class => 'btn'
+    = link_to '一覧にもどる', gyms_path, :class => 'btn'
+
+.row
+  = render 'form'
